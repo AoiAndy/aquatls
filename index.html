@@ -1,0 +1,18 @@
+<nav id="navbar"></nav>
+
+<script>
+async function loadNavbar() {
+    const response = await fetch("nav.json");
+    const data = await response.json();
+    let navHTML = "<ul>";
+    
+    data.navItems.forEach(item => {
+        navHTML += `<li><a href="${item.url}">${item.name}</a></li>`;
+    });
+
+    navHTML += "</ul>";
+    document.getElementById("navbar").innerHTML = navHTML;
+}
+
+loadNavbar();
+</script>
