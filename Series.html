@@ -1,0 +1,24 @@
+<div id="novel-list"></div>
+
+<script>
+async function loadNovels() {
+    const response = await fetch("series.json");
+    const data = await response.json();
+    let html = "";
+
+    data.series.forEach(novel => {
+        html += `
+            <div class="novel">
+                <img src="${novel.cover}" alt="${novel.title}">
+                <h2>${novel.title}</h2>
+                <p>${novel.description}</p>
+                <a href="${novel.url}">Read More</a>
+            </div>
+        `;
+    });
+
+    document.getElementById("novel-list").innerHTML = html;
+}
+
+loadNovels();
+</script>
