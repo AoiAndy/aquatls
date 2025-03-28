@@ -1,0 +1,16 @@
+{
+  "series": [
+    {
+      "title": "Light Novel 1",
+      "cover": "cover1.jpg",
+      "description": "This is a light novel description.",
+      "url": "series/light-novel-1.html"
+    },
+    {
+      "title": "Light Novel 2",
+      "cover": "cover2.jpg",
+      "description": "Another light novel.",
+      "url": "series/light-novel-2.html"
+    }
+  ]
+}
