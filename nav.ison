@@ -1,0 +1,7 @@
+{
+  "navItems": [
+    {"name": "Home", "url": "index.html"},
+    {"name": "Light Novels", "url": "series.html"},
+    {"name": "About", "url": "about.html"}
+  ]
+}
